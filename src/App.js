@@ -8,6 +8,7 @@ import { BrowserRouter as Router, useRoutes } from 'react-router-dom';
 const Aplicativo = () => {
   let routes = useRoutes([ 
     { path: "/", element: <Main />},
+    { path: "/main/:id", element: <Main />},
     { path: "/tabelaDevs/:id", element: <TabelaDevs />},
   ]);
   return routes;
